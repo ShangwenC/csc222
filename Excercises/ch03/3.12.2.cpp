@@ -16,5 +16,9 @@ void print_twice(char phil) {
 
     print_twice('6');
     return 0;
+
+    char argument2[6] = {'t', 'r', 'y', 'm', 'e', '\0'};
+    print_twice(argument2);
+    return 0;
 }
 
