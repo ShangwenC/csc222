@@ -2,11 +2,6 @@
 #include <math.h>
 using namespace std;
 
-void new_line()
-{
-    cout << endl;
-}
-
 int main()
 {
     cout << "First Line." << endl;
@@ -14,3 +9,9 @@ int main()
     cout << "Second Line." << endl;
     return 0;
 }
+
+void new_line()
+{
+    cout << endl;
+}
+
