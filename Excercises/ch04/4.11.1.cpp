@@ -15,6 +15,8 @@ void countdown(int n) {
 
 int main()
 {
-    countdown(3);
+    countdown(-5);
     return 0;
 }
+
+//When using a negative argument for countdown, a list from the argument (in this case, -5) until -261,525 is returned
