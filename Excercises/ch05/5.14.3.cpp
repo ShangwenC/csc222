@@ -14,9 +14,16 @@ void overloaded_function(int birth) {
     }
 }
 
+void overloaded_function(string emotion) {
+    if (emotion == "happy") {
+        cout << "Good morning!";
+    }
+}
+
 int main()
 {
     overloaded_function(12, 4);
     overloaded_function(1999);
+    overloaded_function("happy");
     return 0;
 }
