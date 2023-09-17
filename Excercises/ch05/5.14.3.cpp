@@ -26,6 +26,11 @@ void overloaded_function(int n, string n2) {
     }
 }
 
+void overloaded_function(string phone, int num) {
+    if (phone != "iphone") {
+        cout << "do you have android?";
+    }
+}
 
 int main()
 {
@@ -33,5 +38,6 @@ int main()
     overloaded_function(1999);
     overloaded_function("happy");
     overloaded_function(5,"5");
+    overloaded_function("idk", 4);
     return 0;
 }
