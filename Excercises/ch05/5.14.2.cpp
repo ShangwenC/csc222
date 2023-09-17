@@ -4,10 +4,8 @@ using namespace std;
 
 
 void working(int age) {
-    if (age > 16) {
-        if (age < 65) {
-            cout << "age is within the normal working age." << endl;
-        }
+    if ((age > 16) && (age < 65)) {
+        cout << "age is within the normal working age." << endl;
     }
 }
 
