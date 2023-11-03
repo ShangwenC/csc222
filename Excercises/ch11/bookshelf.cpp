@@ -1,11 +1,12 @@
 //adapted from bookstore program (code at original_bookstore.cpp)
 
+//configurations
 #include<iostream>
 #include<string.h>
 #include<stdlib.h>
-
 using namespace std;
 
+//create a class, i thought it was interesting that they designated private and public so i kept those
 class book	{
 private:
 	char *author,*title;
@@ -21,6 +22,7 @@ public:
 	
 };
 
+// for new entries
 void book::feeddata()	{
 	cin.ignore();
 	cout<<"\nEnter Author Name: ";      cin.getline(author,20);
@@ -28,6 +30,7 @@ void book::feeddata()	{
 	
 }
 
+//for changin existing entries
 void book::editdata()	{
 	
 	cout<<"\nEnter Author Name: ";      cin.getline(author,20);
@@ -35,12 +38,14 @@ void book::editdata()	{
 	
 }
 
+// for displaying existing entries
 void book::showdata()	{
 	cout<<"\nAuthor Name: "<<author;
 	cout<<"\nTitle Name: "<<title;
 	
 }
 
+//to search for an entry
 int book::search(char tbuy[20],char abuy[20] )	{
 	if(strcmp(tbuy,title)==0 && strcmp(abuy,author)==0)
 		return 1;
