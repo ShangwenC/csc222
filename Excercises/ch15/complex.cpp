@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <math.h>
 #include <assert.h>
 #include "complex.h"
 using namespace std;
@@ -48,19 +49,19 @@ string Complex::str_polar()
     return mag  + "e^" + theta + "i";
 }
 
-Complex c(2, 3);
-
-cout << c.str_cartesian() << endl;
-cout << c.str_polar() << endl;
-
 //+ operator
 Complex Complex::operator + (const Complex& c)
 {
     return Complex(real + c.real, imag + c.imag);
 }
 
-Complex c1(2, 3);
-Complex c2(4, 7);
-
-Complex sum = c1 + c2;
-cout << sum.str_cartesian() << endl;
+int main(){
+    Complex c(2, 3);
+    cout << c.str_cartesian() << endl;
+    cout << c.str_polar() << endl;
+    
+    Complex c1(2, 3);
+    Complex c2(4, 7);
+    Complex sum = c1 + c2;
+    cout << sum.str_cartesian() << endl;
+}
