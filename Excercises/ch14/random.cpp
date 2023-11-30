@@ -12,4 +12,9 @@ random_between(int l, int h) {
         int high = l;
         num = low + (rand() % high);
     }
+    if (int l < int h){
+        int low = l;
+        int high = h;
+        num = low + (rand() % high);
+    }
 }
