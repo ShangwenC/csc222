@@ -1,5 +1,15 @@
-#include "random.h"
-if (int 1 = int h){
-    return h;
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+
+random_between(int l, int h) {
+    int num = 0;
+    if (int l = int h){
+        num = h;
+    }
+    if (int l > int h){
+        int low = h;
+        int high = l;
+        num = low + (rand() % high);
+    }
 }
-random_between(5,5)
