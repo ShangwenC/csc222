@@ -4,6 +4,16 @@
 #include <string>
 using namespace std;
 
+Card::Card() {
+  suit = 0;
+  rank = 0;
+}
+
+Card::Card(int s, int r) {
+  suit = s;
+  rank = r;
+}
+
 string Card::to_string() const
 {
     vector<string> suit_strings = {"None", "Clubs", "Diamonds",
