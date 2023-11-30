@@ -17,4 +17,5 @@ random_between(int l, int h) {
         int high = h;
         num = low + (rand() % high);
     }
+    return num;
 }
