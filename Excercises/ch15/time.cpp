@@ -6,6 +6,9 @@ using namespace std;
 struct Time {
     int hour, minute;
     double second;
+
+    Time operator + (const Time& t);
+    Time operator - (const Time& t);
 };
 
 void print_time(Time& t) {
