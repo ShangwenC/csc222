@@ -50,16 +50,26 @@ string Complex::str_polar()
 }
 
 //+ operator
-Complex Complex::operator + (const Complex& c)
-{
+Complex Complex::operator + (const Complex& c) {
     return Complex(real + c.real, imag + c.imag);
 }
 
 //- operator
-Complex Complex::operator - (const Complex& c)
-{
+Complex Complex::operator - (const Complex& c) {
     return Complex(real - c.real, imag - c.imag);
 }
+
+//* operator
+Complex::Complex(double m, double t, Flag) {
+    mag = m; theta = t;
+    polar = true;
+}
+
+/* / operator
+Complex::Complex(double m, double t, Flag) {
+    mag = m; theta = t;
+    polar = true;
+} */
 
 int main(){
     Complex c(2, 3);
