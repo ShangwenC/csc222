@@ -59,6 +59,9 @@ void increment(Time& time, double secs)
     }
 }
 
+Time::Time
+
 int main () {
     Time time = {11, 59, 3.14159};
+    
 }
