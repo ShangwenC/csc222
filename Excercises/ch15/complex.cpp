@@ -55,6 +55,12 @@ Complex Complex::operator + (const Complex& c)
     return Complex(real + c.real, imag + c.imag);
 }
 
+//- operator
+Complex Complex::operator - (const Complex& c)
+{
+    return Complex(real - c.real, imag - c.imag);
+}
+
 int main(){
     Complex c(2, 3);
     cout << c.str_cartesian() << endl;
