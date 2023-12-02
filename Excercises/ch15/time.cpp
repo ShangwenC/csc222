@@ -59,7 +59,30 @@ void increment(Time& time, double secs)
     }
 }
 
-Time::Time
+double convert_to_seconds(const Time& t)
+{
+    int minutes = t.hour * 60 + t.minute;
+    double seconds = minutes * 60 + t.second;
+
+    return seconds;
+}
+
+Time make_time(double secs)
+{
+    Time time;
+    time.hour = int(secs / 3600.0);
+    secs -= time.hour * 3600.0;
+    time.minute = int(secs / 60.0);
+    secs -= time.minute * 60;
+    time.second = secs;
+
+    return time;
+}
+
+Time Time::operator + (const Time& t) {
+    return Time();
+}
+
 
 int main () {
     Time time = {11, 59, 3.14159};
