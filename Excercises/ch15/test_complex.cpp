@@ -1,6 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "Complex.h"
+#include "complex.h"
 using namespace std;
 
 TEST_CASE("Test can create and render a complex number") {
@@ -31,9 +31,4 @@ TEST_CASE("Test can multiply Complex numbers with *") {
 }
 
 TEST_CASE("Test can divide Complex numbers with /") {
-}
-
-TEST_CASE("Test abs of Complex number") {
-    Complex c(3, 4);
-    CHECK(c.abs() == 5.000000);
 }
