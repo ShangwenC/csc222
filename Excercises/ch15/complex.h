@@ -31,6 +31,7 @@ public:
     // member functions
     Complex operator + (const Complex& c);
     Complex operator - (const Complex& c);
+    friend ostream &operator<<(ostream &os, const Complex &c);
     Complex operator * (Complex& c);
     Complex operator / (Complex& c);
     string str_cartesian();
