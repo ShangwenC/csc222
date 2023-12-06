@@ -70,14 +70,3 @@ Complex::Complex(double m, double t, Flag) {
     mag = m; theta = t;
     polar = true;
 } */
-
-int main(){
-    Complex c(2, 3);
-    cout << c.str_cartesian() << endl;
-    cout << c.str_polar() << endl;
-    
-    Complex c1(2, 3);
-    Complex c2(4, 7);
-    Complex sum = c1 + c2;
-    cout << sum.str_cartesian() << endl;
-}
