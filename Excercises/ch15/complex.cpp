@@ -59,6 +59,11 @@ Complex Complex::operator - (const Complex& c) {
     return Complex(real - c.real, imag - c.imag);
 }
 
+ostream &operator<<(ostream &os, const Complex &c) {
+  os << c.real << " + " << c.imag << "i";
+  return os;
+}
+
 //* operator
 Complex::Complex(double m, double t, Flag) {
     mag = m; theta = t;
