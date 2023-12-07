@@ -1,15 +1,12 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include "point.hpp"
 using namespace std;
 
-struct Point {
-    double x, y;
-};
-
-void print_point(Point p)
+ostream& print_point(Point p)
 {
-    cout << "(" << p.x << ", " << p.y << ")" << endl;
+    os << "(" << p.x << ", " << p.y << ")" << endl;
 }
 
 double distance(Point p1, Point p2)
