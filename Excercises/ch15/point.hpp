@@ -2,11 +2,11 @@
 using namespace std;
 
 class Point {
-    double x, y;
-
     public:
     Point();
     Point(int x, int y);
+    int x = 0;
+    int y = 0;
 
     //member functions
     void print_point(Point p);

@@ -2,7 +2,6 @@
 //#include "doctest.h"
 #include <string>
 #include "point.cpp"
-#include "point.hpp"
 using namespace std;
 
 /*TEST_CASE("Test can create and print a point") {
