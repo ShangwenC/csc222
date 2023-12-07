@@ -4,7 +4,22 @@
 #include "point.hpp"
 using namespace std;
 
-void print_point(Point p)
+Point Point::operator - (Point& p) {
+    Point p1(x - p.x, y - p.y);
+    return p1;
+}
+
+Point Point::operator + (Point & p) {
+    Point p1(x + p.x, y + p.y);
+    return p1;
+}
+
+ostream& operator<<(ostream& os, Point& p) {
+    os << "(" << p.x << ", " << p.y << ")";
+    return os;
+}
+
+/*void print_point(Point p)
 {
     cout << "(" << p.x << ", " << p.y << ")" << endl;
 }
@@ -22,3 +37,4 @@ void reflect(Point& p)
     p.x = p.y;
     p.y = temp;
 }
+*/
