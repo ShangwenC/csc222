@@ -4,9 +4,9 @@
 #include "point.hpp"
 using namespace std;
 
-ostream& print_point(Point p)
+void print_point(Point p)
 {
-    os << "(" << p.x << ", " << p.y << ")" << endl;
+    cout << "(" << p.x << ", " << p.y << ")" << endl;
 }
 
 double distance(Point p1, Point p2)
@@ -21,19 +21,4 @@ void reflect(Point& p)
     double temp = p.x;
     p.x = p.y;
     p.y = temp;
-}
-
-int main () {
-    Point blank;
-    blank.x = 3.0;
-    blank.y = 3.0;
-    int x = blank.x;
-    cout << "(" << blank.x << ", " << blank.y << ")" << endl;
-    double distance = blank.x * blank.x + blank.y * blank.y;
-    Point p1 = {3.0, 4.0};
-    Point p2 = p1;
-    cout << "(" << p2.x << ", " << p2.y << ")" << endl;
-    print_point(blank);
-    reflect(blank);
-    print_point(blank);
 }

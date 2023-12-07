@@ -7,8 +7,6 @@ class Point {
     public:
     Point();
     Point(int x, int y);
-    x = 0;
-    y = 0;
 
     //member functions
     void print_point(Point p);
