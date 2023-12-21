@@ -2,7 +2,7 @@
    Test class to implement ISO 8601 Durations
 */
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include <doctest.h>
+#include "doctest.h"
 #include "Duration.h"
 using namespace std;
 
