@@ -12,5 +12,5 @@ public:
   int days();
   Duration operator + (const Duration& d);
   Duration operator - (const Duration& d);
-  string to_sring();
+  string to_string();
 };

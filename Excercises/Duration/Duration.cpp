@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Duration::Duration(), elapsed(0) {
+Duration::Duration();  elapsed(0) {
 }
 Duration::Duration(int seconds) : elapsed(seconds){
 }
