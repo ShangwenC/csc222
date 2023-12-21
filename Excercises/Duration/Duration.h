@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
-Class Duration {
+class Duration {
 public:
   Duration();
+  Duration(int seconds);
+  int elapsed;
   int seconds();
   int minutes();
   int hours();
@@ -11,4 +13,4 @@ public:
   Duration operator + (const Duration& d);
   Duration operator - (const Duration& d);
   string to_sring();
-}
+};
