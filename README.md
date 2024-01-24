@@ -1,5 +1,4 @@
 # css222
-Reminders for self:
-- commit obnoxiously often
-- reread chapters carefully
-- google is a great friend
+૮꒰˶• ༝•˶꒱ა
+
+Final Project [here]<https://codeberg.org/Cody/csc222/src/branch/main/projects/Time>
